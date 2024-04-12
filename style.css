@@ -78,6 +78,7 @@ ul li a{
   font-size: 18px;
   font-weight: 700;
   border: 3px solid #fff;
+  animation: homeBtn 2s forwards 2s ;  
 }
 .logo h3{
   font-style: italic;
@@ -110,11 +111,44 @@ ul li a{
     font-size: 40px;
     font-weight: 700;
     color: #f1f1f1;
-    border: 4px solid #fff;
+/*     border: 4px solid #fff; */
     padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.home-section h2{
+    animation: homeH2 2s forwards 2s ;
+}
+@keyframes homeH2{
+    0%{
+        opacity:0;
+        transform:translateY(-220px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+@keyframes homeP{
+    0%{
+        opacity:0;
+        transform:translateX(-920px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0)
+    }
+}
+@keyframes homeBtn{
+    0%{
+        opacity:0;
+        transform:translateX(920px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0)
+    }
 }
 /*.fadingEffect{
     -webkit-animation: showHide 5s ease-in alternate infinite;
@@ -135,6 +169,7 @@ ul li a{
     text-align: center;
     margin-top: 10px;
     color: red;
+    animation: homeP 2s forwards 2s ;
 }
 .abt-title p{
   font-size: 20px;
